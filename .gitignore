@@ -1,0 +1,4 @@
+Require-Hook-MetaCPAN-*
+.build
+*~
+nytprof*
