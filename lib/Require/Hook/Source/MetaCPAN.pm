@@ -1,14 +1,13 @@
 package Require::Hook::Source::MetaCPAN;
 
+use strict;
+use warnings;
+use Log::ger;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use 5.010001;
-use strict;
-use warnings;
-use Log::ger;
 
 # preload to avoid deep recursion in our INC
 use HTTP::Tiny;
@@ -94,4 +93,5 @@ simply decline so C<require()> will try the next entry in C<@INC>.
 
 Other C<Require::Hook::*> modules.
 
-L<Require::HookChain::source::metacpan> uses us.
+L<Require::HookChain::source::metacpan> is a L<Require::HookChain> version and
+it uses us.
